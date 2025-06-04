@@ -1,0 +1,14 @@
+<!-- templates/profile.html -->
+<!DOCTYPE html>
+<html>
+<head><title>Профиль</title></head>
+<body>
+<h2>Ваш профиль</h2>
+<p>Имя: {{ user['name'] }}</p>
+<p>Email: {{ user['email'] }}</p>
+<form method="post" action="/delete">
+    <button type="submit">Удалить мои данные</button>
+</form>
+<p><a href="/logout">Выйти</a></p>
+</body>
+</html>
